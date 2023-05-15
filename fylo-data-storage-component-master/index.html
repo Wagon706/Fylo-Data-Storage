@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Fylo data storage component</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!--ANIMATE.CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container-fluid" id="square">
+        <div class="img-fluid">
+          <img class="logo" src="images/logo.svg" alt="logo" />
+
+          <!--DOCUMENT-->
+          <div class="document-container">
+            <img
+              class="document-icon"
+              src="images/icon-document.svg"
+              alt="document-icon"
+            />
+          </div>
+
+          <!--FOLDER-->
+          <div class="folder-container">
+            <img
+              class="folder-icon"
+              src="images/icon-folder.svg"
+              alt="folder-icon"
+            />
+          </div>
+
+          <!--UPLOAD-->
+          <div class="upload-container">
+            <img
+              class="upload-icon"
+              src="images/icon-upload.svg"
+              alt="upload-icon"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!--FIRST SQUARE/PART COMPLETE-->
+
+      <!--------------------------------------------------------->
+
+      <div class="container-fluid" id="rectangle">
+        <p class="storage">
+          You've used <span class="gb">815 GB</span> of your storage
+        </p>
+        <div class="img-fluid" id="msg-bubble" id="msg-bubble-mobile">
+          <p id="gbleft">185</p>
+          <p class="msg-text">GB LEFT</p>
+        </div>
+        <div class="container-fluid" id="progress-bar">
+          <div class="container-fluid" id="bar">
+            <div class="container-fluid" id="circle"></div>
+          </div>
+        </div>
+        <p class="gbminlevel">0 GB</p>
+        <!--gbminlevel means the minimum amount of GB-->
+        <p class="gbmaxlevel">1000 GB</p>
+        <!--gbmaxlevel means the maximum amount of GB, 1000GB is 1TB (just a small fact)-->
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/Wagon706">Wagon706</a>.
+      </div>
+    </footer>
+  </body>
+</html>

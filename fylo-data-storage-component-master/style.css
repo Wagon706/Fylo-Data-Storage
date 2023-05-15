@@ -1,0 +1,390 @@
+/**FONTS**/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+/**MISC**/
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 18rem;
+  color: white;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%) !important;
+}
+
+html {
+  scroll-behavior: smooth; /**Scrolling becomes more smoother**/
+}
+
+main,
+footer,
+header {
+  max-width: 1440px;
+  width: 80%;
+  margin: 0 auto;
+  animation: fadeIn 2s; /**Animation of the page appearing, because why not :)**/
+}
+
+body {
+  background: url("images/bg-desktop.png"), hsl(229, 57%, 11%) !important;
+  background-repeat: no-repeat !important;
+  background-position: center 50vh !important;
+  background-size: 100% auto !important;
+}
+#square {
+  display: block;
+  margin-top: 37vh;
+  margin-left: 14.5vh !important;
+  height: 25vh;
+  width: 43vh;
+  background-color: hsl(228, 56%, 26%) !important;
+  border-radius: 5% 37% 5% 5px / 5% 37% 8px 5px;
+}
+.document-container {
+  /**Background Color**/
+  display: block;
+  background-color: hsl(229, 57%, 11%);
+  margin-left: 4vh;
+  margin-top: 4vh;
+  height: 6vh;
+  width: 6vh;
+  border-radius: 10px;
+}
+
+.folder-container {
+  /**Background Color**/
+  display: block;
+  background-color: hsl(229, 57%, 11%);
+  margin-left: 12vh;
+  margin-top: -6vh;
+  height: 6vh;
+  width: 6vh;
+  border-radius: 10px;
+}
+
+.upload-container {
+  /**Background Color**/
+  display: block;
+  background-color: hsl(229, 57%, 11%);
+  margin-left: 20vh;
+  margin-top: -6vh;
+  height: 6vh;
+  width: 6vh;
+  border-radius: 10px;
+}
+
+#rectangle {
+  display: block;
+  margin-top: -20vh;
+  margin-left: 62vh !important;
+  height: 20vh;
+  width: 70vh;
+  background-color: hsl(228, 56%, 26%) !important;
+  border-radius: 10px;
+}
+
+#progress-bar {
+  background-color: hsl(229, 57%, 11%);
+  height: 2.7vh;
+  width: 85%;
+  margin-left: 5vh;
+  border-radius: 10px;
+}
+
+#bar {
+  margin-top: 2.9px;
+  margin-left: 0.3vh;
+  height: 2vh;
+  width: 70%;
+  border-radius: 10px;
+  display: inline-block;
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+
+#circle {
+  height: 1.8vh;
+  width: 1.8vh;
+  border-radius: 20px;
+  margin-left: 39.7vh;
+  margin-top: 0.1vh;
+  background-color: hsl(243, 100%, 93%);
+}
+
+#msg-bubble {
+  position: absolute;
+  left: 125vh;
+  bottom: 55vh;
+  width: 170px;
+  height: 80px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px #000000;
+}
+
+#msg-bubble::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  right: 12px;
+  border-width: 15px 0 0 15px;
+  border-style: solid;
+  border-color: #ffffff transparent transparent transparent;
+}
+
+/**TEXT**/
+
+.storage {
+  display: inline-block;
+  margin-top: 5vh;
+  margin-left: 5vh;
+  color: hsl(243, 100%, 90%);
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.gb {
+  font-weight: 700;
+  font-size: 14px;
+  color: hsl(243, 100%, 93%);
+}
+
+#gbleft {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  margin-left: 3vh;
+  margin-top: 2vh;
+}
+
+.msg-text {
+  display: block;
+  margin-top: -8.5vh;
+  margin-left: 13vh;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: hsl(229, 7%, 55%);
+  font-size: 12px;
+}
+
+.gbminlevel {
+  margin-left: 5vh;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: hsl(243, 100%, 93%);
+  font-size: 12px;
+}
+
+.gbmaxlevel {
+  margin-top: -3.5vh;
+  margin-left: 29.5rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: hsl(243, 100%, 93%);
+  font-size: 12px;
+}
+
+/**IMAGES**/
+
+.logo {
+  margin-top: 5vh;
+  margin-left: 4vh;
+}
+
+.document-icon {
+  margin-top: 1.5vh;
+  margin-left: 1.8vh;
+}
+
+.folder-icon {
+  margin-top: 1.8vh;
+  margin-left: 1.5vh;
+}
+
+.upload-icon {
+  margin-top: 1.9vh;
+  margin-left: 1.5vh;
+}
+
+/**MEDIA QUERIES**/
+
+/**for 1440px resolution its already responsive so there is no need for a media query for it.**/
+
+/**MOBILE**/
+@media (max-width: 375px) {
+  html {
+    scroll-behavior: smooth; /**Scrolling becomes more smoother**/
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 8rem;
+    color: white;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%) !important;
+  }
+
+  main,
+  footer,
+  header {
+    max-width: 375px;
+    width: 80%;
+    margin: 0 auto;
+    animation: fadeIn 2s; /**Animation of the page appearing, because why not :)**/
+  }
+
+  body {
+    background: url("images/bg-mobile.png"), hsl(229, 57%, 11%) !important;
+    background-repeat: no-repeat !important;
+  }
+
+  #square {
+    display: block;
+    margin-top: 20vh;
+    margin-left: -1.5vh !important;
+    height: 30vh;
+    width: 47vh;
+    background-color: hsl(228, 56%, 26%) !important;
+    border-radius: 5% 37% 5% 5px / 5% 37% 8px 5px;
+  }
+
+  .document-container {
+    /**Background Color**/
+    display: block;
+    background-color: hsl(229, 57%, 11%);
+    margin-left: 4vh;
+    margin-top: 4vh;
+    height: 7vh;
+    width: 7vh;
+    border-radius: 10px;
+  }
+
+  .folder-container {
+    /**Background Color**/
+    display: block;
+    background-color: hsl(229, 57%, 11%);
+    margin-left: 13vh;
+    margin-top: -6.9vh;
+    height: 7vh;
+    width: 7vh;
+    border-radius: 10px;
+  }
+
+  .upload-container {
+    /**Background Color**/
+    display: block;
+    background-color: hsl(229, 57%, 11%);
+    margin-left: 22vh;
+    margin-top: -6.9vh;
+    height: 7vh;
+    width: 7vh;
+    border-radius: 10px;
+  }
+  .document-icon {
+    margin-top: 1.6vh;
+    margin-left: 2.1vh;
+  }
+
+  .folder-icon {
+    margin-top: 1.9vh;
+    margin-left: 1.6vh;
+  }
+
+  .upload-icon {
+    margin-top: 2.2vh;
+    margin-left: 1.6vh;
+  }
+
+  #rectangle {
+    display: block;
+    margin-top: 3vh;
+    margin-left: -1.5vh !important;
+    height: 22vh;
+    width: 47vh;
+    background-color: hsl(228, 56%, 26%) !important;
+    border-radius: 10px;
+  }
+
+  .storage {
+    display: inline-block;
+    margin-top: 5vh;
+    margin-left: 6.5vh;
+    color: hsl(243, 100%, 90%);
+    font-family: "Raleway", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .gb {
+    font-weight: 700;
+    font-size: 13px;
+    color: hsl(243, 100%, 93%);
+  }
+  #progress-bar {
+    background-color: hsl(229, 57%, 11%);
+    height: 2.7vh;
+    width: 75%;
+    margin-left: 5vh;
+    border-radius: 10px;
+  }
+
+  #bar {
+    margin-top: 2.9px;
+    margin-left: 0.3vh;
+    height: 2vh;
+    width: 70%;
+    border-radius: 10px;
+    display: inline-block;
+    background: linear-gradient(
+      to right,
+      hsl(6, 100%, 80%),
+      hsl(335, 100%, 65%)
+    );
+  }
+
+  #circle {
+    height: 1.8vh;
+    width: 1.8vh;
+    border-radius: 20px;
+    margin-left: 22.8vh;
+    margin-top: 0.1vh;
+    background-color: hsl(243, 100%, 93%);
+  }
+
+  .gbmaxlevel {
+    margin-top: -3.5vh;
+    margin-left: 13.7rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: hsl(243, 100%, 93%);
+    font-size: 12px;
+  }
+
+  #msg-bubble {
+    position: absolute;
+    left: 14vh;
+    bottom: 19.5vh;
+    width: 160px;
+    height: 70px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #000000;
+  }
+
+  #msg-bubble::before {
+    display: none;
+  }
+
+  .msg-text {
+    display: block;
+    margin-top: -10vh;
+    margin-left: 15vh;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: hsl(229, 7%, 55%);
+    font-size: 12px;
+  }
+}
