@@ -16,6 +16,12 @@ html {
   scroll-behavior: smooth; /**Scrolling becomes more smoother**/
 }
 
+document-container,
+folder-container,
+upload-container {
+  cursor: pointer;
+}
+
 main,
 footer,
 header {
@@ -234,6 +240,12 @@ body {
     width: 80%;
     margin: 0 auto;
     animation: fadeIn 2s; /**Animation of the page appearing, because why not :)**/
+  }
+
+  document-container,
+  folder-container,
+  upload-container {
+    cursor: pointer;
   }
 
   body {
